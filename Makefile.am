@@ -555,6 +555,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/openbench-logic-sniffer/protocol.c \
 	src/hardware/openbench-logic-sniffer/api.c
 endif
+if HW_PARPORT
+src_libdrivers_la_SOURCES += \
+	src/hardware/parport/protocol.h \
+	src/hardware/parport/protocol.c \
+	src/hardware/parport/api.c
+endif
 if HW_PCE_322A
 src_libdrivers_la_SOURCES += \
 	src/hardware/pce-322a/protocol.h \
